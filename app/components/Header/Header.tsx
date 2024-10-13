@@ -1,11 +1,14 @@
 import { Button } from "@/app/components/Button/Button";
 import { NavItem } from "@/app/components/Header/NavItem";
+import Link from "next/link";
 
 export const Header = () => {
   return (
     <header className="flex flex-col py-3 px-6 gap-3">
       <div className="flex justify-between">
-        <div className="text-2xl font-semibold">TechSnap</div>
+        <Link href="/" className="text-2xl font-semibold">
+          TechSnap
+        </Link>
 
         <div className="flex gap-5">
           <input
